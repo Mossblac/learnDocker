@@ -3,7 +3,8 @@ FROM debian:stable-slim
 
 # Update apt
 RUN apt update
-RUN apt upgrade -y
+RUN apt upgrade -y 
+# the "-y" flag tells the run command to enter "yes" for any prompts when installing.
 
 # Install build tooling
 RUN apt install -y build-essential zlib1g-dev libncurses5-dev libgdbm-dev libnss3-dev libssl-dev libreadline-dev libffi-dev libsqlite3-dev wget libbz2-dev
