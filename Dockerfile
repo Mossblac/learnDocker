@@ -1,4 +1,4 @@
 FROM debian:stable-slim
-COPY goserverp /bin/goserverp
+COPY DockerTest /bin/Dockertest
 ENV PORT=8991
-CMD ["/bin/goserverp"]
+CMD ["/bin/Dockertest"]
